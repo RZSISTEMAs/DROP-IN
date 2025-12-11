@@ -3,10 +3,24 @@
 > **Automação de Tráfego Profissional & Inteligente**
 > Desenvolvido por: **RZSistema Tecnologia**
 
-O **DROP-IN** é uma ferramenta desktop avançada para simulação de tráfego web orgânico. Ele utiliza navegadores reais (via Puppeteer/Electron) para gerar visitas, visualizações e interações humanas em sites alvo, com foco em estabilidade e segurança do hardware.
+O **DROP-IN** é uma ferramenta desktop avançada para simulação de tráfego web orgânico, desenvolvida através de múltiplas iterações para garantir máxima eficiência e estabilidade.
 
-![Drop-In v4.0 Dashboard](traffic-bot-gui/screenshot.png) 
-*(Adicione um print da tela v4.0 aqui depois)*
+![Drop-In v4.0 Dashboard](traffic-bot-gui/screenshot.png)
+
+---
+
+## 📅 Evolução do Projeto (Versões)
+
+Durante o ciclo de desenvolvimento, criamos e testamos diversas versões para chegar na perfeição da v4.0:
+
+- **v1.0 (CLI Beta)**: Versão inicial em linha de comando. Funcional, mas complexa para o usuário final.
+- **v2.0 (Smart Queue)**: Introdução da interface gráfica (GUI) e sistema de filas para poupar memória.
+- **v3.0 (Estável + PT-BR)**: Tradução completa, adição de benchmark de hardware e proteção contra travamentos.
+- **v4.0 (Dashboard PRO - ATUAL)**: **A versão mais recomendada e funcional hoje.**
+  - Layout Profissional (Split-Screen).
+  - Visualização de IP em tempo real.
+  - Documentação integrada.
+  - Estabilidade máxima com o novo Motor RZ-Core.
 
 ---
 
