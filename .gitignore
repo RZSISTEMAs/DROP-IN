@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Builds & Distributables
+/traffic-bot-gui/Drop-In-v*-win32-x64/
+/traffic-bot-gui/TrafficBot-win32-x64/
+*.exe
+*.zip
+
+# Logs & System
+npm-debug.log*
+thumbs.db
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/

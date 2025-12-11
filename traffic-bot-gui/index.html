@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROP-IN v4.0 | RZSistema Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cyber-overlay"></div>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR (LEFT) - 40% -->
+        <aside class="sidebar">
+            <header class="brand-header">
+                <div class="logo-text">DROP-IN <span class="v-tag">v4.0</span></div>
+                <div class="brand-sub">RZSISTEMA TECNOLOGIA</div>
+            </header>
+
+            <div class="control-panel">
+                <div class="panel-section">
+                    <label>LINK ALVO (URL)</label>
+                    <input type="text" id="url" value="https://habbisound.com.br/">
+                </div>
+
+                <div class="panel-section">
+                    <label>QUANTIDADE DE JANELAS</label>
+                    <div class="input-row">
+                        <input type="number" id="targetViews" value="5">
+                        <button id="benchBtn" class="sm-btn analyze">ANALISAR PC</button>
+                    </div>
+                    <small id="ram-hint" class="hint-text">Recomendamos fazer a análise antes.</small>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="startBtn" class="xl-btn start">INICIAR OPERAÇÃO</button>
+                    <button id="stopBtn" class="xl-btn stop" disabled>PARAR TUDO</button>
+                </div>
+
+                <div class="stats-mini">
+                    <div class="stat-item">
+                        <span class="lbl">ATIVAS</span>
+                        <span id="activeCount" class="val">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="lbl">STATUS</span>
+                        <span id="statusText" class="val status-idle">PRONTO</span>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="sidebar-footer">
+                <button id="infoBtn" class="help-btn">? GUIA DO SISTEMA</button>
+                <div class="copy">© 2025 RZSistema</div>
+            </footer>
+        </aside>
+
+        <!-- MAIN TERMINAL (RIGHT) - 60% -->
+        <main class="terminal-area">
+            <div class="term-bar">
+                <div class="dots">
+                    <div class="dot r"></div>
+                    <div class="dot y"></div>
+                    <div class="dot g"></div>
+                </div>
+                <div class="term-title">rz_core_log.sh</div>
+            </div>
+            <div id="logs" class="term-content">
+                <div class="log-line">Inicializando Dashboard v4.0...</div>
+                <div class="log-line">Carregando módulos de segurança... [OK]</div>
+                <div class="log-line">Conectado ao núcleo RZSistema.</div>
+                <div class="log-line highlight">>> Aguardando comando do operador.</div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- MODAL DE AJUDA -->
+    <div id="infoModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>CENTRAL DE HOSPITALIDADE E AJUDA</h2>
+            <div class="doc-content">
+                <div class="doc-section">
+                    <h3>1. O QUE É O DROP-IN?</h3>
+                    <p>O Drop-In é uma ferramenta profissional de automação de tráfego. Ele simula visitantes reais em
+                        seu site utilizando navegadores independentes.</p>
+                </div>
+                <div class="doc-section">
+                    <h3>2. COMO FUNCIONA O "IP MASCARADO"?</h3>
+                    <p>Nossa tecnologia injeta cabeçalhos de rede que mascaram a origem da requisição. Quando o
+                        navegador abrir, você verá uma <strong>Etiqueta Vermelha</strong> no canto da tela confirmando
+                        que aquele acesso está protegido e identificado como único.</p>
+                </div>
+                <div class="doc-section">
+                    <h3>3. SEGURANÇA DO SEU COMPUTADOR</h3>
+                    <p>Implementamos o <strong>Monitor RZ-RAM</strong>. O sistema lê sua memória disponível a cada
+                        segundo. Se detectar sobrecarga, ele pausa automaticamente a abertura de novas janelas para
+                        proteger seu Windows de travamentos.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="closeModalBtn" class="action-btn">ENTENDIDO</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+    "name": "traffic-bot-gui",
+    "version": "1.0.0",
+    "description": "Interactive Traffic Bot with GUI",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "package": "electron-packager . Drop-In-v4.0 --platform=win32 --arch=x64 --overwrite"
+    },
+    "keywords": [],
+    "author": "Antigravity",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^28.1.0",
+        "electron-packager": "^17.1.2"
+    },
+    "dependencies": {
+        "puppeteer": "^21.5.2"
+    }
+}
